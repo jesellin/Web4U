@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CSS fundamental properties guide. Examples of display, flexbox, grid, color, and spacing to improve web design.">
+  <title>Web4U — CSS Examples</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <h1 class="brand"><a href="index_en.html">Web4U</a> — CSS</h1>
+      <nav class="site-nav" aria-label="Content">
+        <div class="nav-item"><a href="html_en.html">HTML</a></div>
+        <div class="nav-item"><a href="css_en.html">CSS</a></div>
+        <div class="nav-item"><a href="svg_en.html">SVG</a></div>
+        <div class="nav-item"><a href="css.html" style="border:1px solid #ccc; border-radius:4px; padding:2px 5px;">ES</a></div>
+      </nav>
+    </header>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:12px 0">
+      <h2>CSS Examples — 5 properties</h2>
+      <div class="actions"><button class="print-btn" onclick="window.print()">Download PDF</button></div>
+    </div>
+
+    <nav class="local-toc" aria-label="Table of Contents">
+      <ul>
+        <li><a href="#display">display</a></li>
+        <li><a href="#flexbox">flexbox</a></li>
+        <li><a href="#grid">grid</a></li>
+        <li><a href="#color">color / background</a></li>
+        <li><a href="#spacing">margin / padding</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article id="display" class="question">
+        <h3 class="item-title">display</h3>
+        <p class="note">Defines how an element is rendered in the page flow.</p>
+        <pre class="codebox"><code>.box{display:flex;align-items:center;justify-content:center;}</code></pre>
+        <img class="example-img" src="Imagenes/CSS/.box.png" alt="display example">
+        <p class="note"><strong>Practical use:</strong> Centering content and creating flexible layouts. <a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank" title="Go to W3Schools documentation">W3Schools</a></p>
+      </article>
+
+      <article id="flexbox" class="question">
+        <h3 class="item-title">flexbox</h3>
+        <p class="note">Box model for designing in one dimension (row or column).</p>
+        <pre class="codebox"><code>.container{display:flex;gap:8px}
+.container &gt; *{flex:1}</code></pre>
+        <img class="example-img" src="Imagenes/CSS/flexbox.png" alt="flexbox example">
+        <p class="note"><strong>Practical use:</strong> Toolbars or horizontal lists. <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank" title="Go to W3Schools documentation">W3Schools</a></p>
+      </article>
+
+      <article id="grid" class="question">
+        <h3 class="item-title">grid</h3>
+        <p class="note">Two-dimensional system with rows and columns.</p>
+        <pre class="codebox"><code>.grid{display:grid;grid-template-columns:1fr 2fr;gap:12px}</code></pre>
+        <img class="example-img" src="Imagenes/CSS/grid.png" alt="grid example">
+        <p class="note"><strong>Practical use:</strong> Complex layouts like dashboards. <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank" title="Go to W3Schools documentation">W3Schools</a></p>
+      </article>
+
+      <article id="color" class="question">
+        <h3 class="item-title">color / background</h3>
+        <p class="note">Control of text and background colors.</p>
+        <pre class="codebox"><code>.lead{color:#1155cc;background:#f0f7ff;padding:8px}</code></pre>
+        <img class="example-img" src="Imagenes/CSS/color.png" alt="color example">
+        <p class="note"><strong>Practical use:</strong> Visual hierarchy and contrast. <a href="https://www.w3schools.com/css/css_colors.asp" target="_blank" title="Go to W3Schools documentation">W3Schools</a></p>
+      </article>
+
+      <article id="spacing" class="question">
+        <h3 class="item-title">margin / padding</h3>
+        <p class="note">Outer and inner spacing to separate elements.</p>
+        <pre class="codebox"><code>.card{margin:12px;padding:14px;border-radius:8px}</code></pre>
+        <img class="example-img" src="Imagenes/CSS/.card.png" alt="spacing example">
+        <p class="note"><strong>Practical use:</strong> Consistent spacing in interfaces. <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" title="Go to W3Schools documentation">W3Schools</a></p>
+      </article>
+    </main>
+
+    <footer class="site-footer" style="margin-top:18px">Web4U — CSS Examples</footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

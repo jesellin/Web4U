@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jesus Santana Drago">
+  <title>Web4U — Ejemplos SVG</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <h1 class="brand"><a href="index.html">Web4U</a> — SVG</h1>
+      <nav class="site-nav" aria-label="Contenido">
+        <div class="nav-item"><a href="html.html">HTML</a></div>
+        <div class="nav-item"><a href="css.html">CSS</a></div>
+        <div class="nav-item"><a href="svg.html">SVG</a></div>
+        <a href="svg_en.html" style="margin-left:10px; border:1px solid #ccc; border-radius:4px; padding:2px 5px;" title="Switch to English">EN</a>
+      </nav>
+    </header>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:12px 0">
+      <h2>Ejemplos SVG — 5 usos y técnicas</h2>
+      <div class="actions"><button class="print-btn" onclick="window.print()">Descargar contenido en PDF</button></div>
+    </div>
+
+    <nav class="local-toc" aria-label="Índice">
+      <ul>
+        <li><a href="#basic">SVG básico</a></li>
+        <li><a href="#shapes">Formas (rect, circle)</a></li>
+        <li><a href="#paths">Paths</a></li>
+        <li><a href="#text">Texto en SVG</a></li>
+        <li><a href="#icons">Iconos y símbolos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article id="basic" class="question">
+        <h3 class="item-title">SVG básico</h3>
+        <p class="note">Contenedor vectorial escalable dentro del HTML.</p>
+        <pre class="codebox"><code>&lt;svg width="200" height="80"&gt;&lt;/svg&gt;</code></pre>
+        <div class="svg-demo"><svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="188" height="68" rx="8" fill="#e8f4ff" stroke="#88b7ff"/></svg></div>
+        <img class="example-img" src="Imagenes/SVG/basico.png" alt="SVG básico ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Gráficos que no pixelen al escalar. <a href="https://www.w3schools.com/graphics/svg_intro.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+
+      <article id="shapes" class="question">
+        <h3 class="item-title">Formas</h3>
+        <p class="note">Rectángulos, círculos y elipses son básicos.</p>
+        <pre class="codebox"><code>&lt;circle cx="40" cy="40" r="30" /&gt;</code></pre>
+        <div class="svg-demo"><svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="28" fill="#ffdede"/><rect x="90" y="14" width="96" height="52" rx="6" fill="#fff4de"/></svg></div>
+        <img class="example-img" src="Imagenes/SVG/circulo.png" alt="SVG shapes ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Diagramas simples y decoraciones. <a href="https://www.w3schools.com/graphics/svg_circle.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+
+      <article id="paths" class="question">
+        <h3 class="item-title">Paths</h3>
+        <p class="note">Permiten formas complejas mediante comandos.</p>
+        <pre class="codebox"><code>&lt;path d="M10 10 H 90 V 70 H 10 Z" /&gt;</code></pre>
+        <div class="svg-demo"><svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg"><path d="M14 14 C40 2, 160 2, 186 14" fill="none" stroke="#88b7ff" stroke-width="3"/></svg></div>
+        <img class="example-img" src="Imagenes/SVG/path.png" alt="SVG paths ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Logos y trazados personalizados. <a href="https://www.w3schools.com/graphics/svg_path.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+
+      <article id="text" class="question">
+        <h3 class="item-title">Texto en SVG</h3>
+        <p class="note">Texto que se puede escalar y transformar.</p>
+        <pre class="codebox"><code>&lt;text x="10" y="20"&gt;Hola SVG&lt;/text&gt;</code></pre>
+        <div class="svg-demo"><svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg"><text x="10" y="40" font-size="20" fill="#1155cc">Hola SVG</text></svg></div>
+        <img class="example-img" src="Imagenes/SVG/texto.png" alt="SVG texto ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Labels en gráficos y carteles. <a href="https://www.w3schools.com/graphics/svg_text.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+
+      <article id="icons" class="question">
+        <h3 class="item-title">Iconos y símbolos</h3>
+        <p class="note">Reusar símbolos con &lt;use&gt; o sprites.</p>
+        <pre class="codebox"><code>&lt;symbol id="s1"&gt;...&lt;/symbol&gt; &lt;use href="#s1"/&gt;</code></pre>
+        <div class="svg-demo"><svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg"><g fill="#88b7ff"><circle cx="30" cy="40" r="14"/><rect x="70" y="22" width="64" height="36" rx="6"/></g></svg></div>
+        <img class="example-img" src="Imagenes/SVG/figura.png" alt="SVG icons ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Iconos a medida, indicadores y logos. <a href="https://www.w3schools.com/graphics/" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+    </main>
+
+    <footer class="site-footer" style="margin-top:18px">Web4U — Ejemplos SVG</footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

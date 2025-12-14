@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jesus Santana Drago">
+  <title>Web4U — Ejemplos HTML</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <h1 class="brand"><a href="index.html">Web4U</a> — HTML</h1>
+      <nav class="site-nav" aria-label="Contenido">
+        <div class="nav-item"><a href="html.html">HTML</a></div>
+        <div class="nav-item"><a href="css.html">CSS</a></div>
+        <div class="nav-item"><a href="svg.html">SVG</a></div>
+        <a href="html_en.html" style="margin-left:10px; border:1px solid #ccc; border-radius:4px; padding:2px 5px;" title="Switch to English">EN</a>
+      </nav>
+    </header>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:12px 0">
+      <h2>Ejemplos HTML — 5 etiquetas</h2>
+      <div class="actions"><button class="print-btn" onclick="window.print()">Descargar contenido en PDF</button></div>
+    </div>
+
+    <nav class="local-toc" id="localToc" aria-label="Índice">
+      <ul>
+        <li><a href="#header">&lt;header&gt;</a></li>
+        <li><a href="#nav">&lt;nav&gt;</a></li>
+        <li><a href="#article">&lt;article&gt;</a></li>
+        <li><a href="#form">&lt;form&gt;</a></li>
+        <li><a href="#table">&lt;table&gt;</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article id="header" class="question">
+        <h3 class="item-title">&lt;header&gt;</h3>
+        <p class="note">Elemento semántico que agrupa la cabecera de una página o sección.</p>
+        <pre class="codebox"><code>&lt;header&gt;
+  &lt;h1&gt;Título del sitio&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+        <img class="example-img" src="Imagenes/HTML/header.png" alt="Header ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Agrupar el logo y la navegación principal. <a href="https://www.w3schools.com/tags/tag_header.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+
+      <article id="nav" class="question">
+        <h3 class="item-title">&lt;nav&gt;</h3>
+        <p class="note">Contenedor para enlaces de navegación principales.</p>
+        <pre class="codebox"><code>&lt;nav&gt;
+  &lt;a href="/"&gt;Inicio&lt;/a&gt;
+  &lt;a href="/about"&gt;Sobre mi&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+        <img class="example-img" src="Imagenes/HTML/nav.png" alt="Nav ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Agrupar menús y facilitar el acceso. <a href="https://www.w3schools.com/tags/tag_nav.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+
+      <article id="article" class="question">
+        <h3 class="item-title">&lt;article&gt;</h3>
+        <p class="note">Contenido autocontenido que puede repartirse independientemente.</p>
+        <pre class="codebox"><code>&lt;article&gt;
+  &lt;h2&gt;Noticia&lt;/h2&gt;
+  &lt;p&gt;Texto...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+        <img class="example-img" src="Imagenes/HTML/article.png" alt="Article ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Entradas de blog, noticias o widgets independientes. <a href="https://www.w3schools.com/tags/tag_article.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+
+      <article id="form" class="question">
+        <h3 class="item-title">&lt;form&gt;</h3>
+        <p class="note">Formulario para recopilar datos del usuario.</p>
+        <pre class="codebox"><code>&lt;form action="/enviar" method="post"&gt;
+  &lt;label&gt;Nombre &lt;input name="nombre" required&gt;&lt;/label&gt;
+  &lt;button&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        <img class="example-img" src="Imagenes/HTML/form.png" alt="Form ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Recolectar datos (contacto, login). <a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+
+      <article id="table" class="question">
+        <h3 class="item-title">&lt;table&gt;</h3>
+        <p class="note">Representa datos en forma tabular.</p>
+        <pre class="codebox"><code>&lt;table&gt;
+  &lt;caption&gt;Horario&lt;/caption&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Hora&lt;/th&gt;&lt;th&gt;Asignatura&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;9:00&lt;/td&gt;&lt;td&gt;Matemáticas&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        <img class="example-img" src="Imagenes/HTML/table.png" alt="Table ejemplo">
+        <p class="note"><strong>Uso práctico:</strong> Mostrar datos estructurados. <a href="https://www.w3schools.com/tags/tag_table.asp" target="_blank" title="Ir a la documentación de W3Schools" rel="noopener">W3Schools</a></p>
+      </article>
+    </main>
+
+    <footer class="site-footer" style="margin-top:18px">Web4U — Ejemplos HTML</footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

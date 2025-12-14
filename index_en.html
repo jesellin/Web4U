@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Web4U educational site. Learn web development with practical examples of HTML, CSS, and SVG. Downloadable code and tutorials.">
+  <title>Web4U — Learn HTML, CSS and SVG</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="brand">Web4U</h1>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index_en.html">Home</a>
+        <a href="html_en.html">HTML</a>
+        <a href="css_en.html">CSS</a>
+        <a href="svg_en.html">SVG</a>
+        <a href="index.html" style="margin-left:10px; border:1px solid #ccc; border-radius:4px;">ES</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap main-grid">
+<section class="intro">
+  <h2>Learn the Web Essentials</h2>
+  <p>Choose a section to view practical and downloadable examples. Each page includes code, result screenshots, and official links.</p>
+  <button class="print-btn" onclick="window.print()" style="margin-top:10px;">Download PDF</button>
+</section>
+
+    <section class="cards">
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="18" rx="2" stroke="#1155cc" stroke-width="1.5"/><path d="M8 9h8M8 13h8" stroke="#1155cc" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>HTML</h3>
+        <p>Elements and basic structure of web pages.</p>
+        <p><a class="btn" href="html_en.html">View Examples</a></p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#1b9a59" stroke-width="1.5"/><path d="M7 8h10" stroke="#1b9a59" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>CSS</h3>
+        <p>Properties and layout: display, flexbox, grid and more.</p>
+        <p><a class="btn" href="css_en.html">View Examples</a></p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#c94a9f" stroke-width="1.5"/><path d="M8 12h8" stroke="#c94a9f" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>SVG</h3>
+        <p>Vector graphics for the web: shapes, paths and text.</p>
+        <p><a class="btn" href="svg_en.html">View Examples</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <small>Web4U — Educational Material | Save as PDF: use the button on each page</small>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
